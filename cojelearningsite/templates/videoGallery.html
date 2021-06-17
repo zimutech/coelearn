@@ -1,0 +1,162 @@
+{% extends "galleryLayout.html" %}
+
+{% block content %}
+
+
+<section id="portfolios" class="section-padding">
+    <!-- Container Starts -->
+    <div class="container">
+
+
+        <div class="jumbotron text-center">
+            <h1 class=" wow flipInX" data-wow-delay="0.4s">Gallery</h1>
+            <p class="lead">Learn Online, Learn Electronically, Learn New Skills, Improve Your KNowledge, Learn At Your Own Pace.</p>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-12">
+                <!-- Portfolio Controller/Buttons -->
+                <div class="controls text-center">
+                    <a class="filter active btn btn-common" data-filter="all">
+                        All
+                    </a>
+                    <a class="filter btn btn-common" data-filter=".storyTime">
+                        Story Time
+                    </a>
+                    <a class="filter btn btn-common" data-filter=".workshops">
+                        Workshops
+                    </a>
+                    <a class="filter btn btn-common" data-filter=".howTo">
+                        How To
+                    </a>
+
+                    <a class="filter btn btn-common" data-filter=".mobileLiteracy">
+                        Mobile Literacy
+                    </a>
+
+                </div>
+                <!-- Portfolio Controller/Buttons Ends-->
+            </div>
+
+
+
+
+
+
+            <div class="videoContainer">
+                <h3> The video Gallery</h3>
+                <div class="videoRow">
+                    <div class="col-lg-4">
+                        <div class="video_feature_img">
+                            <img src="../static/video/education/img1.PNG" width="100%" />
+                            <img src="../static/video/education/play.png" class="video_play_btn" onclick="playVideo('../static/video/education/vid1.mp4')" />
+                        </div>
+                    </div>
+
+
+
+                    <div class="col-lg-4">
+                        <div class="video_small_img_row">
+                            <div class="video_small_img">
+                                <img src="../static/video/howTo/img2.PNG" />
+                                <img src="../static/video/howTo/play.png" class="video_play_btn" onclick="playVideo('../static/video/education/vid1.mp4')" />
+                            </div>
+                            <p> bla bla bla blabla bla bla blabla bla bla blabla bla bla blabla <br /> bla bla blabla bla bla blabla bla bla blabla bla </p>
+                        </div>
+
+
+                        <div class="video_small_img_row">
+                            <img src="../static/video/mobileLiteracy/img5.PNG" />
+                            <img src="../static/video/mobileLiteracy/play.png" class="video_play_btn" onclick="playVideo('../static/video/education/vid1.mp4')" />
+                        </div>
+                        <p> bla bla bla blabla bla bla blabla bla bla blabla bla bla blabla <br /> bla bla blabla bla bla blabla bla bla blabla bla </p>
+
+
+
+                        <div class="video_small_img_row">
+                            <img src="../static/video/storyTime/img3.PNG" />
+                            <img src="../static/video/storyTime/play.png" class="video_play_btn" />
+                            <img src="../static/video/mobileLiteracy/play.png" class="video_play_btn" onclick="playVideo('../static/video/education/vid1.mp4')" />  
+                        </div>
+                        <p> bla bla bla blabla bla bla blabla bla bla blabla bla bla blabla <br /> bla bla blabla bla bla blabla bla bla blabla bla </p>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <!-- Portfolio Recent Projects -->
+            <div id="portfolio" class="row wow fadeInDown" data-wow-delay="0.4s">
+                <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix codingEvents">
+                    <div class="portfolio-item">
+                        <div class="shot-item">
+                            <a href="{{ url_for('galleryPoortjieCodingEvent') }}"><img src="../static/images/gallery/codingEvents/poortjie/img2.jpg" alt="" /></a>
+                            <h5>Coding Events</h5>
+                            <p>Poortjie Library coding Event</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+        </div>
+
+    </div>
+
+    <div class="video_player" id="videoPlayerThing">
+        <video width="100%" controls autoplay id="myVideoThing">
+            <source src="../static/video/education/vid1.mp4" type="video/mp4" />
+        </video>
+        <img src="../static/video/education/close.png" class="video_close_btn" onclick="stopVideo()" />
+
+
+    </div>
+
+    <script>
+        var videoPlayerThing = document.getElementById("videoPlayerThing");
+        var myVideoThing = document.getElementById("myVideoThing");
+
+        function stopVideo() {
+
+            videoPlayerThing.style.display = "none"
+        }
+
+        function playVideo(file) {
+            myVideoThing.src = file;
+            videoPlayerThing.style.display = "block";
+
+        }
+
+    </script>
+
+    <!-- Container Ends -->
+</section>
+
+
+
+
+
+
+
+{% endblock %}
+

@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="cojelearningsite" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\Senzo\ Zikalala\\source\\repos\\cojelearningsite\\obj\\Any\ CPU\\Release\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^C:\\Users\\Senzo\ Zikalala\\source\\repos\\cojelearningsite\\obj\\Any\ CPU\\Release\\Package\\PackageTmp$" />
+  </parameter>
+</parameters>

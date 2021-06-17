@@ -1,0 +1,14 @@
+.galleryIndividual{
+    margin: 10px 50px;
+}
+
+.galleryIndividual img {
+    transition: 1s;
+    padding: 15px;
+    width: 200px;
+}
+
+.galleryIndividual img:hover {
+    filter: grayscale(100%);
+    transform: scale(1.1);
+}

@@ -1,0 +1,424 @@
+{% extends "galleryLayout.html" %}
+
+{% block content %}
+<section id="portfolios" class="section-padding">
+    <!-- Container Starts -->
+    <div class="container">
+        
+
+        <div class="jumbotron text-center">
+            <h1 class=" wow flipInX" data-wow-delay="0.4s">Gallery</h1>
+            <p class="lead">Learn Online, Learn Electronically, Learn New Skills, Improve Your KNowledge, Learn At Your Own Pace.</p>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-12">
+                <!-- Portfolio Controller/Buttons -->
+                <div class="controls text-center">
+                    <a class="filter active btn btn-common" data-filter="all">
+                        All
+                    </a>
+                    <a class="filter btn btn-common" data-filter=".codingEvents">
+                        Coding Events
+                    </a>
+                    <a class="filter btn btn-common" data-filter=".development">
+                        Staff Training
+                    </a>
+                    <a class="filter btn btn-common" data-filter=".print">
+                        Digital Skills
+                    </a>
+
+                    <a class="filter btn btn-common" data-filter=".mobileLiteracy">
+                        Mobile Litaracy
+                    </a>
+                    <!--
+    <a class="filter btn btn-common" data-filter=".ereaderusage">
+        E-Reader Usage
+    </a>
+
+    <a class="filter btn btn-common" data-filter=".researchAndDevelopment">
+        Research And Development
+    </a>
+    <a class="filter btn btn-common" data-filter=".quizzes">
+        Quizzes
+    </a>
+    <a class="filter btn btn-common" data-filter=".mobileClassroomEvents">
+        Mobile Classroom Events
+    </a>
+    <a class="filter btn btn-common" data-filter=".mobileELearning">
+        Mobile E-Learning
+    </a>
+        -->
+                </div>
+                <!-- Portfolio Controller/Buttons Ends-->
+            </div>
+
+            <!-- Portfolio Recent Projects -->
+            <div id="portfolio" class="row wow fadeInDown" data-wow-delay="0.4s">
+                <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix codingEvents">
+                    <div class="portfolio-item">
+                        <div class="shot-item">
+                            <a href="{{ url_for('videoGallery') }}"><img src="../static/images/photos/Battle of the Books 2018/Processed Thumbnails/img11.jpg" alt="" /></a>
+
+
+
+                            <h5>Coding Events</h5>
+                            <p>Poortjie Library coding Event</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix codingEvents">
+                    <div class="portfolio-item">
+                        <div class="shot-item">
+                            <a href="{{ url_for('galleryCodingEventCodingRoadshow') }}"><img src="../static/images/photos/Battle of the Books 2019/Processed Thumbnails/img11.jpg" alt="" /></a>
+                            <h5 class="text-center">Battle of the Books 2018</h5>
+
+                            <p class="text-center">Coding Roadshow</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix codingEvents">
+                    <div class="portfolio-item">
+                        <div class="shot-item">
+                            <a href="{{ url_for('galleryMainCodingEvent') }}"><img src="../static/images/photos/Holiday Programme/Processed Thumbnails/img66.jpg" alt="" /></a>
+
+
+
+                            <h5>Coding Events</h5>
+
+                            <p>Johannesburg Main Library coding Event</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix codingEvents">
+                    <div class="portfolio-item">
+                        <div class="shot-item">
+                            <a href="{{ url_for('galleryCosmoCityCodingEvent') }}"><img src="../static/images/photos/Science Scuffle 2018/Big pic/img2.jpg" alt="" /></a>
+
+
+
+
+                            <h5>Coding Events</h5>
+
+                            <p>Cosmo City Library coding Event</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix codingEvents">
+                    <div class="portfolio-item">
+                        <div class="shot-item">
+                            <a href="{{ url_for('galleryEldoradoCodingEvent') }}"><img src="../static/images/photos/Science Scuffle 2019/Processed Thumbnails/img55.jpg" alt="" /></a>
+
+
+
+
+                            <h5>Coding Events</h5>
+
+                            <p>Eldorado Library coding Event</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix codingEvents">
+                    <div class="portfolio-item">
+                        <div class="shot-item">
+                            <a href="{{ url_for('galleryEldoradoCodingEvent') }}"><img src="../static/images/photos/Story Skirmish 2018/Processed Thumbnails/img88.jpg" alt="" /></a>
+
+                            
+
+
+                            <h5>Coding Events</h5>
+
+                            <p>Eldorado Library coding Event</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!--
+    <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix codingEvents">
+        <div class="portfolio-item">
+            <div class="shot-item">
+                <a href="{{ url_for('galleryPoortjieCodingEvent') }}"><img src="../static/images/gallery/codingEvents/poortjie/img2.jpg" alt="" /></a>
+                <h5>Coding Events</h5>
+                <p>Poortjie Library coding Event</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix codingEvents">
+        <div class="portfolio-item">
+            <div class="shot-item">
+                <a href="{{ url_for('galleryPoortjieCodingEvent') }}"><img src="../static/images/gallery/codingEvents/poortjie/img2.jpg" alt="" /></a>
+                <h5>Coding Events</h5>
+                <p>Poortjie Library coding Event</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix codingEvents">
+        <div class="portfolio-item">
+            <div class="shot-item">
+                <a href="{{ url_for('galleryPoortjieCodingEvent') }}"><img src="../static/images/gallery/codingEvents/poortjie/img2.jpg" alt="" /></a>
+                <h5>Coding Events</h5>
+                <p>Poortjie Library coding Event</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix codingEvents">
+        <div class="portfolio-item">
+            <div class="shot-item">
+                <a href="{{ url_for('galleryPoortjieCodingEvent') }}"><img src="../static/images/gallery/codingEvents/poortjie/img2.jpg" alt="" /></a>
+                <h5>Coding Events</h5>
+                <p>Poortjie Library coding Event</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix codingEvents">
+        <div class="portfolio-item">
+            <div class="shot-item">
+                <a href="{{ url_for('galleryPoortjieCodingEvent') }}"><img src="../static/images/gallery/codingEvents/poortjie/img2.jpg" alt="" /></a>
+                <h5>Coding Events</h5>
+                <p>Poortjie Library coding Event</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix codingEvents">
+        <div class="portfolio-item">
+            <div class="shot-item">
+                <a href="{{ url_for('galleryPoortjieCodingEvent') }}"><img src="../static/images/gallery/codingEvents/poortjie/img2.jpg" alt="" /></a>
+                <h5>Coding Events</h5>
+                <p>Poortjie Library coding Event</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix codingEvents">
+        <div class="portfolio-item">
+            <div class="shot-item">
+                <a href="{{ url_for('galleryPoortjieCodingEvent') }}"><img src="../static/images/gallery/codingEvents/poortjie/img2.jpg" alt="" /></a>
+                <h5>Coding Events</h5>
+                <p>Poortjie Library coding Event</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix codingEvents">
+        <div class="portfolio-item">
+            <div class="shot-item">
+                <a href="{{ url_for('galleryPoortjieCodingEvent') }}"><img src="../static/images/gallery/codingEvents/poortjie/img2.jpg" alt="" /></a>
+                <h5>Coding Events</h5>
+                <p>Poortjie Library coding Event</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix codingEvents">
+        <div class="portfolio-item">
+            <div class="shot-item">
+                <a href="{{ url_for('galleryPoortjieCodingEvent') }}"><img src="../static/images/gallery/codingEvents/poortjie/img2.jpg" alt="" /></a>
+                <h5>Coding Events</h5>
+                <p>Poortjie Library coding Event</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix codingEvents">
+        <div class="portfolio-item">
+            <div class="shot-item">
+                <a href="{{ url_for('galleryPoortjieCodingEvent') }}"><img src="../static/images/gallery/codingEvents/poortjie/img2.jpg" alt="" /></a>
+                <h5>Coding Events</h5>
+                <p>Poortjie Library coding Event</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix codingEvents">
+        <div class="portfolio-item">
+            <div class="shot-item">
+                <a href="{{ url_for('galleryPoortjieCodingEvent') }}"><img src="../static/images/gallery/codingEvents/poortjie/img2.jpg" alt="" /></a>
+                <h5>Coding Events</h5>
+                <p>Poortjie Library coding Event</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix codingEvents">
+        <div class="portfolio-item">
+            <div class="shot-item">
+                <a href="{{ url_for('galleryPoortjieCodingEvent') }}"><img src="../static/images/gallery/codingEvents/poortjie/img2.jpg" alt="" /></a>
+                <h5>Coding Events</h5>
+                <p>Poortjie Library coding Event</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix codingEvents">
+        <div class="portfolio-item">
+            <div class="shot-item">
+                <a href="{{ url_for('galleryPoortjieCodingEvent') }}"><img src="../static/images/gallery/codingEvents/poortjie/img2.jpg" alt="" /></a>
+                <h5>Coding Events</h5>
+                <p>Poortjie Library coding Event</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix codingEvents">
+        <div class="portfolio-item">
+            <div class="shot-item">
+                <a href="{{ url_for('galleryPoortjieCodingEvent') }}"><img src="../static/images/gallery/codingEvents/poortjie/img2.jpg" alt="" /></a>
+                <h5>Coding Events</h5>
+                <p>Poortjie Library coding Event</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix codingEvents">
+        <div class="portfolio-item">
+            <div class="shot-item">
+                <a href="{{ url_for('galleryPoortjieCodingEvent') }}"><img src="../static/images/gallery/codingEvents/poortjie/img2.jpg" alt="" /></a>
+                <h5>Coding Events</h5>
+                <p>Poortjie Library coding Event</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix codingEvents">
+        <div class="portfolio-item">
+            <div class="shot-item">
+                <a href="{{ url_for('galleryPoortjieCodingEvent') }}"><img src="../static/images/gallery/codingEvents/poortjie/img2.jpg" alt="" /></a>
+                <h5>Coding Events</h5>
+                <p>Poortjie Library coding Event</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix codingEvents">
+        <div class="portfolio-item">
+            <div class="shot-item">
+                <a href="{{ url_for('galleryPoortjieCodingEvent') }}"><img src="../static/images/gallery/codingEvents/poortjie/img2.jpg" alt="" /></a>
+                <h5>Coding Events</h5>
+                <p>Poortjie Library coding Event</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix codingEvents">
+        <div class="portfolio-item">
+            <div class="shot-item">
+                <a href="{{ url_for('galleryPoortjieCodingEvent') }}"><img src="../static/images/gallery/codingEvents/poortjie/img2.jpg" alt="" /></a>
+                <h5>Coding Events</h5>
+                <p>Poortjie Library coding Event</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix codingEvents">
+        <div class="portfolio-item">
+            <div class="shot-item">
+                <a href="{{ url_for('galleryPoortjieCodingEvent') }}"><img src="../static/images/gallery/codingEvents/poortjie/img2.jpg" alt="" /></a>
+                <h5>Coding Events</h5>
+                <p>Poortjie Library coding Event</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix codingEvents">
+        <div class="portfolio-item">
+            <div class="shot-item">
+                <a href="{{ url_for('galleryPoortjieCodingEvent') }}"><img src="../static/images/gallery/codingEvents/poortjie/img2.jpg" alt="" /></a>
+                <h5>Coding Events</h5>
+                <p>Poortjie Library coding Event</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix codingEvents">
+        <div class="portfolio-item">
+            <div class="shot-item">
+                <a href="{{ url_for('galleryPoortjieCodingEvent') }}"><img src="../static/images/gallery/codingEvents/poortjie/img2.jpg" alt="" /></a>
+                <h5>Coding Events</h5>
+                <p>Poortjie Library coding Event</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix codingEvents">
+        <div class="portfolio-item">
+            <div class="shot-item">
+                <a href="{{ url_for('galleryPoortjieCodingEvent') }}"><img src="../static/images/gallery/codingEvents/poortjie/img2.jpg" alt="" /></a>
+                <h5>Coding Events</h5>
+                <p>Poortjie Library coding Event</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix codingEvents">
+        <div class="portfolio-item">
+            <div class="shot-item">
+                <a href="{{ url_for('galleryPoortjieCodingEvent') }}"><img src="../static/images/gallery/codingEvents/poortjie/img2.jpg" alt="" /></a>
+                <h5>Coding Events</h5>
+                <p>Poortjie Library coding Event</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix codingEvents">
+        <div class="portfolio-item">
+            <div class="shot-item">
+                <a href="{{ url_for('galleryPoortjieCodingEvent') }}"><img src="../static/images/gallery/codingEvents/poortjie/img2.jpg" alt="" /></a>
+                <h5>Coding Events</h5>
+                <p>Poortjie Library coding Event</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix codingEvents">
+        <div class="portfolio-item">
+            <div class="shot-item">
+                <a href="{{ url_for('galleryPoortjieCodingEvent') }}"><img src="../static/images/gallery/codingEvents/poortjie/img2.jpg" alt="" /></a>
+                <h5>Coding Events</h5>
+                <p>Poortjie Library coding Event</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix codingEvents">
+        <div class="portfolio-item">
+            <div class="shot-item">
+                <a href="{{ url_for('galleryPoortjieCodingEvent') }}"><img src="../static/images/gallery/codingEvents/poortjie/img2.jpg" alt="" /></a>
+                <h5>Coding Events</h5>
+                <p>Poortjie Library coding Event</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix codingEvents">
+        <div class="portfolio-item">
+            <div class="shot-item">
+                <a href="{{ url_for('galleryPoortjieCodingEvent') }}"><img src="../static/images/gallery/codingEvents/poortjie/img2.jpg" alt="" /></a>
+                <h5>Coding Events</h5>
+                <p>Poortjie Library coding Event</p>
+            </div>
+        </div>
+    </div>
+    -->
+
+            </div>
+        </div>
+    </div>
+    <!-- Container Ends -->
+</section>
+
+
+
+
+
+{% endblock %}

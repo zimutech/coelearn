@@ -1,0 +1,523 @@
+﻿{% extends "individuallibrariesLayout.html" %}
+
+{% block content %}
+
+<section id="about" class="section-padding">
+
+
+    <div class="container">
+        <div class="jumbotron text-center">
+            <h1>Libraries</h1>
+            <p class="lead">Learn Online, Learn Electronically, Learn New Skills, Improve Your KNowledge, Learn At Your Own Pace.</p>
+        </div>
+
+        <div class="container text-center">
+            <h5 style="border-block:double"><a href="{{ url_for('diepslootLibrary') }}">Head Office</a></h5>
+            <p>
+                22 Solomon Street <br />
+                Braamfontein <br />
+                Johannesburg<br />
+                2017
+            </p>
+        </div>
+
+    </div>
+
+    <div class="container text-center">
+        <div class="tab">
+            <button class="tablinks" onmouseover="openLibrary(event, 'regionA')">Region A</button>
+            <button class="tablinks" onmouseover="openLibrary(event, 'regionB')">Region B</button>
+            <button class="tablinks" onmouseover="openLibrary(event, 'regionC')">Region C</button>
+            <button class="tablinks" onmouseover="openLibrary(event, 'regionD')">Region D</button>
+            <button class="tablinks" onmouseover="openLibrary(event, 'regionE')">Region E</button>
+            <button class="tablinks" onmouseover="openLibrary(event, 'regionF')">Region F</button>
+            <button class="tablinks" onmouseover="openLibrary(event, 'regionG')">Region G</button>
+        </div>
+
+        <div id="regionA" class="tabcontent text-center">
+            <h3>Region A</h3>
+            <h5 style="border-block:double">Regional office</h5>
+            <p>
+                Midrand Teljoy Building <br />
+                300 Fifteenth Road <br />
+                Randjiespark <br />
+                Midrand <br />
+                1686
+            </p>
+            <div class="row">
+                <div class="col-md-3 text-center tab">
+                    <h5 style="border-block:double"><a href="{{ url_for('diepslootLibrary') }}">Diepsloot Library</a></h5>
+                    <p>Diepsloot Youth Centre, 383 Ingonyama Road, Diepsloot West</p>
+                </div>
+                <div class="col-md-3 text-center">
+                    <h5 style="border-block:double"><a href="{{ url_for('halfwayHouseLibrary') }}">Halfway House Library</a></h5>
+                    <p>Units 002 and 003, Midrand Business Park, Ground Floor, Block A, 563 Old Pretoria Road, Midrand</p>
+                </div>
+                <div class="col-md-3 text-center">
+                    <h5 style="border-block:double"><a href="{{ url_for('ivoryParkLibrary') }}">Ivory Park Library</a></h5>
+                    <p>Lord Khanyile Precinct, 4326 Freedom Drive, Ivory Park</p>
+                </div>
+                <div class="col-md-3 text-center">
+                    <h5 style="border-block:double"><a href="{{ url_for('ivoryParkNorthLibrary') }}">Ivory Park North Library</a></h5>
+                    <p>8712 Tokoloho Street, Ivory park Ext 3</p>
+                </div>
+                <div class="col-md-3 text-center">
+                    <h5 style="border-block:double"><a href="{{ url_for('klipfonteinViewLibrary') }}">Klipfontein View Library</a></h5>
+                    <p>Klipfontein View Multi-Purpose Centre, 1109 Lekoa Street, Klipfontein</p>
+                </div>
+                <div class="col-md-3 text-center">
+                    <h5 style="border-block:double"><a href="{{ url_for('rabieRidgeLibrary') }}">Rabie Ridge Library</a></h5>
+                    <p>Rabie Ridge Community Centre, 3 Korhaan Crescent, Rabie Ridge</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="regionB" class="tabcontent">
+            <h3>Region B</h3>
+            <h5 style="border-block:double">Regional Head Office</h5>
+            <p>
+                ACA Krans building <br />
+                35 Symons Road <br />
+                Auckland Park <br />
+            </p>
+
+
+            <div class="row">
+                <div class="col-md-3">
+                    <h5 style="border-block:double"><a href="{{ url_for('blackheathLibrary') }}">Blackheath Library</a></h5>
+                    <p>Heathway Centre, Beyers Naude Drive, Blackheath</p>
+                </div>
+                <div class="col-md-3">
+                    <h5 style="border-block:double"><a href="{{ url_for('bosmontLibrary') }}">Bosmont Library</a></h5>
+                    <p>Cnr. Albertina Sisulu and Griffiths Road, Bosmont</p>
+                </div>
+                <div class="col-md-3">
+                    <h5 style="border-block:double"><a href="{{ url_for('coronationvilleLibrary') }}">Coronationville Library</a></h5>
+                    <p>156 Dordrecht Street, Coronationville</p>
+                </div>
+                <div class="col-md-3">
+                    <h5 style="border-block:double"><a href="{{ url_for('emmarentiaLibrary') }}">Emmarentia Library</a></h5>
+                    <p>Cnr. Barry Hertzog Ave and Greenhill Road, Emmarentia</p>
+                </div>
+                <div class="col-md-3">
+                    <h5 style="border-block:double"><a href="{{ url_for('lindenLibrary') }}">Linden Library</a></h5>
+                    <p>Cnr. 4th Ave and 6th Street, Linden</p>
+                </div>
+                <div class="col-md-3">
+                    <h5 style="border-block:double"><a href="{{ url_for('melvilleLibrary') }}">Melville Library</a></h5>
+                    <p>Cnr. Main Street and Ayr Street, melville Boulevard</p>
+                </div>
+                <div class="col-md-3">
+                    <h5 style="border-block:double"><a href="{{ url_for('newlandsLibrary') }}">Newlands Library</a></h5>
+                    <p>Cnr. 12th Street and Van Zijl Street, Newlands</p>
+                </div>
+                <div class="col-md-3">
+                    <h5 style="border-block:double"><a href="{{ url_for('parkhurstLlibrary') }}">Parkhurst Llibrary</a></h5>
+                    <p>Verity park, Cnr. 5th Ave and 13th Street, Parkhurst</p>
+                </div>
+                <div class="col-md-3">
+                    <h5 style="border-block:double"><a href="{{ url_for('parkviewLibrary') }}">Parkview Library</a></h5>
+                    <p>51 Athlone Avenue, Parkview</p>
+                </div>
+                <div class="col-md-3">
+                    <h5 style="border-block:double"><a href="{{ url_for('pennyvilleContainerLibrary') }}">Pennyville Container Library</a></h5>
+                    <p>Cnr. Rietbok Street and New Canada Road, Pennyville</p>
+                </div>
+                <div class="col-md-3">
+                    <h5 style="border-block:double"><a href="{{ url_for('randburgLibrary') }}">Randburg Library</a></h5>
+                    <p>Cnr. Braam Fischer Drive and Selkirk Drive, Randburg</p>
+                </div>
+                <div class="col-md-3">
+                    <h5 style="border-block:double"><a href="{{ url_for('riverleaLibrary') }}">Riverlea Library</a></h5>
+                    <p>Cnr. Colorado Drive and Avon Street, Riverlea</p>
+                </div>
+                <div class="col-md-3">
+                    <h5 style="border-block:double"><a href="{{ url_for('rosebankLibrary') }}">Rosebank Library</a></h5>
+                    <p>8 Keyes Avenue, Rosebank</p>
+                </div>
+                <div class="col-md-3">
+                    <h5 style="border-block:double"><a href="{{ url_for('westburyLibrary') }}">Westbury Library</a></h5>
+                    <p>Cnr. Roberts Avenue and Du Plessis Street, Westbury</p>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+        <div id="regionC" class="tabcontent">
+            <h3>Region C</h3>
+            <h5 style="border-block:double">Regional Head Office</h5>
+            <p>
+                Roodepoort Civic Centre <br />
+                100 Christiaan de Wet Drive <br />
+                4th Floor <br />
+                Florida park <br />
+                1709
+            </p>
+
+            <div class="row">
+                <div class="col-md-3">
+                    <h5 style="border-block:double"><a href="{{ url_for('boskruinLibrary') }}">Boskruin Library</a></h5>
+                    <p>Kelly Avenue, Boskruin</p>
+                </div>
+                <div class="col-md-3">
+                    <h5 style="border-block:double"><a href="{{ url_for('braamfischervilleLibrary') }}">Braamfischerville Library</a></h5>
+                    <p>Cnr. 6732 Loerieblaar Avenue and Methohgo Street, Bramfischerville Multipurpose Centre, Bramfischerville</p>
+                </div>
+                <div class="col-md-3">
+                    <h5 style="border-block:double"><a href="{{ url_for('cosmoCityLibrary') }}">Cosmo City Library</a></h5>
+                    <p>Cnr. South Africa and Angola Drive, Cosmo Multipurpose Centre, Cosmo City  Ext 2</p>
+                </div>
+                <div class="col-md-3">
+                    <h5 style="border-block:double"><a href="{{ url_for('davidsonvilleLibrary') }}">Davidsonville Library</a></h5>
+                    <p>Cnr. Minnaar Street and Campbell Street, Davidsonville</p>
+                </div>
+                <div class="col-md-3">
+                    <h5 style="border-block:double"><a href="{{ url_for('floridaLibrary') }}">Florida Library</a></h5>
+                    <p>Cnr. 3rd Avenue and Church Street, Florida</p>
+                </div>
+                <div class="col-md-3">
+                    <h5 style="border-block:double"><a href="{{ url_for('horizonViewLibrary') }}">HorizonView Library</a></h5>
+                    <p>Horison View Shopping Centre, Cnr. Crane Street and Sonop Street, Horizon View</p>
+                </div>
+                <div class="col-md-3">
+                    <h5 style="border-block:double"><a href="{{ url_for('leratongContainerLibrary') }}">Leratong Container Library</a></h5>
+                    <p>Leratong Village Skills Centre, Leratong</p>
+                </div>
+                <div class="col-md-3">
+                    <h5 style="border-block:double"><a href="{{ url_for('olivedaleLibrary') }}">Olivedale Library</a></h5>
+                    <p>President Fouche Drive, Olivedale</p>
+                </div>
+                <div class="col-md-3">
+                    <h5 style="border-block:double"><a href="{{ url_for('roodepoortLibray') }}">Roodepoort Libray</a></h5>
+                    <p>Cnr. Berlandina and Hodgson Street, Roodepoort</p>
+                </div>
+                <div class="col-md-3">
+                    <h5 style="border-block:double"><a href="{{ url_for('strubensvalleyLibrary') }}">Strubensvalley Library</a></h5>
+                    <p>Fredenharry Road, Strubensvalley</p>
+                </div>
+                <div class="col-md-3">
+                    <h5 style="border-block:double"><a href="{{ url_for('tshepisongLibrary') }}">Tshepisong Library</a></h5>
+                    <p>5903 Tshepisong Multipurpose Centre, Phase 4, Tshepisong</p>
+                </div>
+                <div class="col-md-3">
+                    <h5 style="border-block:double"><a href="{{ url_for('weltevredenparkLibrary') }}">Weltevredenpark Library</a></h5>
+                    <p>Fern Street, Weltevredenpark</p>
+                </div>
+                <div class="col-md-3">
+                    <h5 style="border-block:double"><a href="{{ url_for('wilroParkLibrary') }}">WilroPark Library</a></h5>
+                    <p>Wilro Park Shopping Centre, Cnr. Mimosa and Taaibos Street, Wilro Park</p>
+                </div>
+                <div class="col-md-3">
+                    <h5 style="border-block:double"><a href="{{ url_for('witpoortjieLibrary') }}">Witpoortjie Library</a></h5>
+                    <p>22 payne Street, Witpoortjie</p>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+        <div id="regionD" class="tabcontent">
+            <h3>Region D</h3>
+            <h5 style="border-block:double">Regional Head Office</h5>
+            <p>
+                1 Koma Road <br />
+                Jabulani Civic Centre <br />
+                Jabulani
+            </p>
+            <div class="row">
+                <div class="col-md-3">
+                    <h5 style="border-block:double"><a href="{{ url_for('diepkloofZone1Library') }}">Diepkloof Zone 1 Library</a></h5>
+                    <p>227 Jack Klipin Road, Diepkloof Zone 1</p>
+                </div>
+                <div class="col-md-3">
+                    <h5 style="border-block:double"><a href="{{ url_for('diepkloofZone5Library') }}">Diepkloof Zone 5 Library</a></h5>
+                    <p>5244 Ben Naude Drive, Diepkloof Zone 5</p>
+                </div>
+                <div class="col-md-3">
+                    <h5 style="border-block:double"><a href="{{ url_for('dobsonvilleLibrary') }}">Dobsonville Library</a></h5>
+                    <p>People's Centre, 2332 Luthuli Street, Dobsonville</p>
+                </div>
+                <div class="col-md-3">
+                    <h5 style="border-block:double"><a href="{{ url_for('emndeniLibrary') }}">Emndeni Library</a></h5>
+                    <p>587 Cnr. Sondela Street and Zamukulungisa Street, Emndeni North</p>
+                </div>
+                <div class="col-md-3">
+                    <h5 style="border-block:double"><a href="{{ url_for('jabavuLibrary') }}">Jabavu Library</a></h5>
+                    <p>3137 Diokane Drive, Central Western Jabavu</p>
+                </div>
+                <div class="col-md-3">
+                    <h5 style="border-block:double"><a href="{{ url_for('klipspruitChildrensLibrary') }}">Klipspruit Children's Library</a></h5>
+                    <p>Cnr Matsie St & Sifotho St, Klipspruit</p>
+                </div>
+                <div class="col-md-3">
+                    <h5 style="border-block:double"><a href="{{ url_for('klipspruitWestLibrary') }}">Klipspruit West Library</a></h5>
+                    <p>N.P Wilsnach Recreation Centre, Cnr. Daffodil Street and Daisy Street, Klipspruit West Ext 1</p>
+                </div>
+                <div class="col-md-3">
+                    <h5 style="border-block:double"><a href="{{ url_for('meadowlandsLibrary') }}">Meadowlands Library</a></h5>
+                    <p>219 Masile Street, meadowlands</p>
+                </div>
+                <div class="col-md-3">
+                    <h5 style="border-block:double"><a href="{{ url_for('mofoloLibrary') }}">Mofolo Library</a></h5>
+                    <p>1249 Mzilikazi Street, Mofolo</p>
+                </div>
+                <div class="col-md-3">
+                    <h5 style="border-block:double"><a href="{{ url_for('noordgesigLibrary') }}">Noordgesig Library</a></h5>
+                    <p>Main Square, Cnr. North Road and Central Road, Noordgesig</p>
+                </div>
+                <div class="col-md-3">
+                    <h5 style="border-block:double"><a href="{{ url_for('orlandoEastLibrary') }}">Orlando East Library</a></h5>
+                    <p>6455 Mooki Street, Orlando East</p>
+                </div>
+                <div class="col-md-3">
+                    <h5 style="border-block:double"><a href="{{ url_for('phiriLibrary') }}">Phiri Library</a></h5>
+                    <p>448 Cnr. Mabalane Street and Gumede street, Phiri (Mapetla)</p>
+                </div>
+                <div class="col-md-3">
+                    <h5 style="border-block:double"><a href="{{ url_for('pimvilleLibrary') }}">Pimville Library</a></h5>
+                    <p>11624 Modjadji Street, Pimville</p>
+                </div>
+                <div class="col-md-3">
+                    <h5 style="border-block:double"><a href="{{ url_for('proteaGlenLibrary') }}">Protea Glen Library</a></h5>
+                    <p>1703 Wild Chestnut Street, Protea Glen Ext 1</p>
+                </div>
+                <div class="col-md-3">
+                    <h5 style="border-block:double"><a href="{{ url_for('proteaNorthLibrary') }}">Protea North Library</a></h5>
+                    <p>902 Cnr. Madikane Street and Makhayi Street, Protea North</p>
+                </div>
+                <div class="col-md-3">
+                    <h5 style="border-block:double"><a href="{{ url_for('slovovilleLibrary') }}">Slovoville Library</a></h5>
+                    <p>1082 Lizard Street, Slovoville</p>
+                </div>
+                <div class="col-md-3">
+                    <h5 style="border-block:double"><a href="{{ url_for('tshiaweloLibrary') }}">Tshiawelo Library</a></h5>
+                    <p>Recreation Centre, 671 Tshianda Street, Tshiawelo</p>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div id="regionE" class="tabcontent">
+            <h3>Region E</h3>
+            <h5 style="border-block:double">Regional Head Office</h5>
+            <p>
+                131 West Street on Nelson Mandela <br />
+                Sandton Square
+            </p>
+            <div class="row">
+                <div class="col-md-3">
+                    <h5 style="border-block:double"><a href="{{ url_for('alexandra3rdAvenueLibrary') }}">Alexandra 3rd Avenue Library</a></h5>
+                    <p>1340-1313 3rd Avenue, Alexandra</p>
+                </div>
+                <div class="col-md-3">
+                    <h5 style="border-block:double"><a href="{{ url_for('alexandra8thAvenueLibrary') }}">Alexandra 8th Avenue Library</a></h5>
+                    <p>Civic Centre, Cnr. 8th Avenue and Roosevelt Street, Alexandra</p>
+                </div>
+                <div class="col-md-3">
+                    <h5 style="border-block:double"><a href="{{ url_for('bryanstonLibrary') }}">Bryanston Library</a></h5>
+                    <p>Cnr. New and Payne Street, Bryanston</p>
+                </div>
+                <div class="col-md-3">
+                    <h5 style="border-block:double"><a href="{{ url_for('killarneyLibrary') }}">Killarney Library</a></h5>
+                    <p>killarney Shopping Centre, Riviera Road, Killarney</p>
+                </div>
+                <div class="col-md-3">
+                    <h5 style="border-block:double"><a href="{{ url_for('linbroParkLibrary') }}">Linbro Park Library</a></h5>
+                    <p>108 Hilton Road, Linbro Park</p>
+                </div>
+                <div class="col-md-3">
+                    <h5 style="border-block:double"><a href="{{ url_for('narscotManorLibrary') }}">Narscot Manor Library</a></h5>
+                    <p>Norscot manor Recreation Centre, 16 Penguin Drive, Norscot Manor</p>
+                </div>
+                <div class="col-md-3">
+                    <h5 style="border-block:double"><a href="{{ url_for('orangeGroveReferenceLibrary') }}">Orange Grove Reference Library</a></h5>
+                    <p>Cnr. Louis Botha Avenue and 13th Street, Orange Grove</p>
+                </div>
+                <div class="col-md-3">
+                    <h5 style="border-block:double"><a href="{{ url_for('riverParkLibrary') }}">River Park Library</a></h5>
+                    <p>Cnt. Sheridan Road and River Park Road, River Park</p>
+                </div>
+                <div class="col-md-3">
+                    <h5 style="border-block:double"><a href="{{ url_for('rivoniaLibrary') }}">Rivonia Library</a></h5>
+                    <p>Cnr. Rivonia Boulevard and 10th Avenue, Rivonia</p>
+                </div>
+                <div class="col-md-3">
+                    <h5 style="border-block:double"><a href="{{ url_for('sandringhamLibrary') }}">Sandringham Library</a></h5>
+                    <p>Dan Pienaar Park, Athlone Avenue, Sandringham</p>
+                </div>
+                <div class="col-md-3">
+                    <h5 style="border-block:double"><a href="{{ url_for('sandtonLibrary') }}">Sandton Library</a></h5>
+                    <p>Nelson Mandela Square, West Street, Sandton</p>
+                </div>
+                <div class="col-md-3">
+                    <h5 style="border-block:double"><a href="{{ url_for('savoyLibrary') }}">Savoy Library</a></h5>
+                    <p>Cnr Darwin Avenue and Aintree Avenue, Savoy</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="regionF" class="tabcontent">
+            <h3>Region F</h3>
+            <h5 style="border-block:double">Regional Head Office</h5>
+            <p>
+                Mayfair Library <br />
+                11 Albertina Sisulu Road <br />
+                Mayfair
+            </p>
+            <div class="row">
+                <div class="col-md-3">
+                    <h5 style="border-block:double"><a href="{{ url_for('brixtonLibrary') }}">Brixton Library</a></h5>
+                    <p>Cnr. Mercury Street and High Street, Brixton</p>
+                </div>
+                <div class="col-md-3">
+                    <h5 style="border-block:double"><a href="{{ url_for('glenandaLibrary') }}">Glenanda Library</a></h5>
+                    <p>Cnr. Vorster Avenue and Surmon Avenue, Glenanda</p>
+                </div>
+                <div class="col-md-3">
+                    <h5 style="border-block:double"><a href="{{ url_for('hillbrowLibrary') }}">Hillbrow Library</a></h5>
+                    <p>30 Olive Road, Hillbrow</p>
+                </div>
+                <div class="col-md-3">
+                    <h5 style="border-block:double"><a href="{{ url_for('malvernLibrary') }}">Malvern Library</a></h5>
+                    <p>Shop 31, Malvern Plaza, Cnr. Jules Street, Malvern</p>
+                </div>
+                <div class="col-md-3">
+                    <h5 style="border-block:double"><a href="{{ url_for('mayfairLibrary') }}">Mayfair Library</a></h5>
+                    <p>11 Albertina Sisulu Road, Mayfair</p>
+                </div>
+                <div class="col-md-3">
+                    <h5 style="border-block:double"><a href="{{ url_for('murrayParkLibrary') }}">Murray Park Library</a></h5>
+                    <p>Cnr. Park Street and Stone Street, Belgravia, Jeppestown</p>
+                </div>
+                <div class="col-md-3">
+                    <h5 style="border-block:double"><a href="{{ url_for('rhodesParkLibrary') }}">Rhodes Park Library</a></h5>
+                    <p>Cnr. Kitchener Avenue and Montague Road, Kensington</p>
+                </div>
+                <div class="col-md-3">
+                    <h5 style="border-block:double"><a href="{{ url_for('rossettenvilleLibrary') }}">Rossettenville Library</a></h5>
+                    <p>Ground Floor Shop L10, Rosettenville Junction, 592 Geranium Street, Rosettenville</p>
+                </div>
+                <div class="col-md-3">
+                    <h5 style="border-block:double"><a href="{{ url_for('southHillsLibrary') }}">South Hills Library</a></h5>
+                    <p>Cnr. Outspan Road & Henderson Road, Moffat View Ext 3, South Hills</p>
+                </div>
+                <div class="col-md-3">
+                    <h5 style="border-block:double"><a href="{{ url_for('southdaleLibrary') }}">Southdale Library</a></h5>
+                    <p>Southdale Mall, 184 Landsborough Road, Southdale</p>
+                </div>
+                <div class="col-md-3">
+                    <h5 style="border-block:double"><a href="{{ url_for('yeovilleLibrary') }}">Yeoville Library</a></h5>
+                    <p>51 Raleigh Street, Yoeville</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="regionG" class="tabcontent">
+            <h3>Region G</h3>
+            <h5 style="border-block:double">Regional Head Office</h5>
+            <p>
+                Cnr. Katz and Louw Street <br />
+                Ennerdale Ext 9
+            </p>
+            <div class="row">
+                <div class="col-md-3">
+                    <h5 style="border-block:double"><a href="{{ url_for('drieziekLibrary') }}">rieziek Library</a></h5>
+                    <p> -----Under Construction----- </p>
+                </div>
+                <div class="col-md-3">
+                    <h5 style="border-block:double"><a href="{{ url_for('eldoradoParkExt2Library') }}">Eldorado Park Ext2 Library</a></h5>
+                    <p>J.D Opperman Centre, 3592 Sneeuberg Street, Eldorado Park Ext 2</p>
+                </div>
+                <div class="col-md-3">
+                    <h5 style="border-block:double"><a href="{{ url_for('eldoradoParkExt5Library') }}">Eldorado Park Ext5 Library</a></h5>
+                    <p>Community Centre, 4044 Link Crescent, Eldorado Park Ext 5</p>
+                </div>
+                <div class="col-md-3">
+                    <h5 style="border-block:double"><a href="{{ url_for('ennerdaleExt1Library') }}">Enerdale Ext 1 Library</a></h5>
+                    <p>Civic Centre, 1376 Archilles Street, Ennerdale Ext 1</p>
+                </div>
+                <div class="col-md-3">
+                    <h5 style="border-block:double"><a href="{{ url_for('ennerdaleExt9Library') }}">Ennerdale Ext 9 Library</a></h5>
+                    <p>Cnr. Katz and Louw Street, Ennerdale Ext 9</p>
+                </div>
+                <div class="col-md-3">
+                    <h5 style="border-block:double"><a href="{{ url_for('lehaeLibrary') }}">Lehae Library</a></h5>
+                    <p> ------Under Construction------ </p>
+                </div>
+                <div class="col-md-3">
+                    <h5 style="border-block:double"><a href="{{ url_for('lenasiaExt1Library') }}">Lenasia Ext 1 Library</a></h5>
+                    <p>Civic Centre, 2641 Cnr. Rose Avenue and Eland Avenue, Lenasia Ext 1</p>
+                </div>
+                <div class="col-md-3">
+                    <h5 style="border-block:double"><a href="{{ url_for('lenasiaExt3Library') }}">Lenasia Ext 3 Library</a></h5>
+                    <p>Recreation Centre, 4015 Salvia Street, Lenasia Ext 3</p>
+                </div>
+                <div class="col-md-3">
+                    <h5 style="border-block:double"><a href="{{ url_for('lenasiaSouthLibrary') }}">Lenasia South Library</a></h5>
+                    <p>Community Centre, Cnr. Wimbledon Street and Wellington Street, Lenasia South</p>
+                </div>
+                <div class="col-md-3">
+                    <h5 style="border-block:double"><a href="{{ url_for('naturenaLibrary') }}">Naturena Library</a></h5>
+                    <p>1 Rocky St, Naturena</p>
+                </div>
+                <div class="col-md-3">
+                    <h5 style="border-block:double"><a href="{{ url_for('orangeFarmLibrary') }}">Orange Farm Library</a></h5>
+                    <p>Stand 15746, Orange Farm Ext 4</p>
+                </div>
+                <div class="col-md-3">
+                    <h5 style="border-block:double"><a href="{{ url_for('poortjieLibrary') }}">Poortjie Library</a></h5>
+                    <p>Poortjie Community Centre, Cnr. Khubeita Street and Foreman Street, Poortjie</p>
+                </div>
+                <div class="col-md-3">
+                    <h5 style="border-block:double"><a href="{{ url_for('vlakfonteinLibrary') }}">Vlakfontein Library</a></h5>
+                    <p>Vlakfontein Skills Centre, 4309 Kgotso drive, Vlakfontein</p>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    
+
+</section> 
+
+<script>
+    function openLibrary(evt, libraryName) {
+        // Declare all variables
+        var i, tabcontent, tablinks;
+
+        // Get all elements with class="tabcontent" and hide them
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+
+        // Get all elements with class="tablinks" and remove the class "active"
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+
+        // Show the current tab, and add an "active" class to the link that opened the tab
+        document.getElementById(libraryName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+</script>  
+
+
+    <!-- Services Section Start -->
+    <section id="services" class="services section-padding">
+    </section>
+    <!-- Services Section End -->
+    <!-- Contact Section End -->
+    {% endblock %}
