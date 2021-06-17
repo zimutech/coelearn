@@ -204,8 +204,6 @@
     <Folder Include="cojelearningsite\templates\region_c\" />
     <Folder Include="cojelearningsite\templates\region_b\" />
     <Folder Include="cojelearningsite\templates\region_a\" />
-    <Folder Include="Properties\" />
-    <Folder Include="Properties\PublishProfiles\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="cojelearningsite\static\assets\.DS_Store" />
@@ -883,7 +881,6 @@
     <Content Include="cojelearningsite\templates\galleryLayoutForIndividualPages.html" />
     <Content Include="cojelearningsite\templates\videoGallery.html" />
     <Content Include="cojelearningsite\templates\videoGalleryScripts\facebookVideos.html" />
-    <None Include="Properties\PublishProfiles\cojelearningsite - Web Deploy.pubxml" />
     <Content Include="requirements.txt" />
     <Content Include="cojelearningsite\static\content\bootstrap.css" />
     <Content Include="cojelearningsite\static\content\bootstrap.min.css" />
